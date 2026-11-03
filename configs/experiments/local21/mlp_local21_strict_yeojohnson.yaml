@@ -1,0 +1,24 @@
+name: mlp_local21_strict_yeojohnson
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_strict_v1
+
+features:
+  set: local_21
+  preprocessing:
+    scaler: yeo_johnson_skewed
+
+graph:
+  view: none
+
+model:
+  name: mlp
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

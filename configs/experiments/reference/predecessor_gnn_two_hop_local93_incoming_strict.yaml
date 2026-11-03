@@ -1,0 +1,25 @@
+name: predecessor_gnn_two_hop_local93_incoming_strict
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_strict_v1
+
+features:
+  set: local_93
+  preprocessing:
+    scaler: standard
+
+graph:
+  view: incoming
+  hops: 2
+
+model:
+  name: predecessor_gnn_two_hop
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

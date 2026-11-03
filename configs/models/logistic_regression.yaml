@@ -1,0 +1,17 @@
+name: logistic_regression
+
+fixed_parameters:
+  max_iter: 2000
+  solver: liblinear
+
+search_space:
+  C:
+    - 0.01
+    - 0.1
+    - 1.0
+    - 10.0
+    - 100.0
+
+  class_weight:
+    - null
+    - balanced

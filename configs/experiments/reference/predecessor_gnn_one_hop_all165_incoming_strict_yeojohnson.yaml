@@ -1,0 +1,25 @@
+name: predecessor_gnn_one_hop_all165_incoming_strict_yeojohnson
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_strict_v1
+
+features:
+  set: all_165
+  preprocessing:
+    scaler: yeo_johnson_skewed
+
+graph:
+  view: incoming
+  hops: 1
+
+model:
+  name: predecessor_gnn_one_hop
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

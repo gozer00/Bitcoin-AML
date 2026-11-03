@@ -1,0 +1,24 @@
+name: gcn_local93_bidirectional_strict_yeojohnson
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_strict_v1
+
+features:
+  set: local_93
+  preprocessing:
+    scaler: yeo_johnson_skewed
+
+graph:
+  view: bidirectional
+
+model:
+  name: gcn
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

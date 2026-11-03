@@ -1,0 +1,19 @@
+name: graphsage_sampled
+
+fixed_parameters:
+  epochs: 200
+  learning_rate: 0.01
+  weight_decay: 0.0005
+  num_layers: 2
+  fanout:
+    - 10
+    - 10
+
+search_space:
+  hidden_dim:
+    - 16
+    - 32
+    - 64
+  dropout:
+    - 0.2
+    - 0.5

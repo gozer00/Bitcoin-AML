@@ -1,0 +1,24 @@
+name: graphsage_sampled_all165_bidirectional_strict
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_strict_v1
+
+features:
+  set: all_165
+  preprocessing:
+    scaler: standard
+
+graph:
+  view: bidirectional
+
+model:
+  name: graphsage_sampled
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

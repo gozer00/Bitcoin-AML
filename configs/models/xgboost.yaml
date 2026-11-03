@@ -1,0 +1,20 @@
+name: xgboost
+
+fixed_parameters:
+  n_estimators: 300
+  eval_metric: logloss
+  subsample: 0.8
+  colsample_bytree: 0.8
+
+search_space:
+  max_depth:
+    - 3
+    - 6
+    - 9
+    - 16
+    - 32
+
+  learning_rate:
+    - 0.01
+    - 0.1
+    - 0.3

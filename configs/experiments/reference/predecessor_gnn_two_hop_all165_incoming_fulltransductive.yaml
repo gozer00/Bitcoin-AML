@@ -1,0 +1,25 @@
+name: predecessor_gnn_two_hop_all165_incoming_fulltransductive
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_fulltransductive_v1
+
+features:
+  set: all_165
+  preprocessing:
+    scaler: standard
+
+graph:
+  view: incoming
+  hops: 2
+
+model:
+  name: predecessor_gnn_two_hop
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

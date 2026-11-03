@@ -1,0 +1,2 @@
+n_columns,mean_of_column_means,min_column_mean,max_column_mean,mean_of_column_stds,min_column_std,max_column_std,n_columns_mean_near_zero_abs_lt_0p05,n_columns_std_near_one_0p9_1p1
+165,4.053430984640727e-06,-0.0004710741341114044,0.0004614499630406499,0.999924898147583,0.9984465837478638,1.0020469427108765,165,165

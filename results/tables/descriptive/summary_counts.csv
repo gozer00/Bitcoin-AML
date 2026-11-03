@@ -1,0 +1,8 @@
+quantity,count,share_of_total
+total_nodes,203769,1.0
+labeled_nodes,46564,0.22851366007587023
+unknown_nodes,157205,0.7714863399241297
+licit_nodes,42019,0.2062089915541618
+illicit_nodes,4545,0.022304668521708405
+illicit_share_of_labeled,4545,0.09760759384932566
+total_edges,234355,

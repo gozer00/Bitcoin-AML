@@ -1,0 +1,7 @@
+numpy==2.5.1
+pandas==3.0.3
+scikit-learn==1.9.0
+PyYAML==6.0.3
+torch==2.13.0
+xgboost==3.4.1
+matplotlib==3.11.1

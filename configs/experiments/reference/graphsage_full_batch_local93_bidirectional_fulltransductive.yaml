@@ -1,0 +1,24 @@
+name: graphsage_full_batch_local93_bidirectional_fulltransductive
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_fulltransductive_v1
+
+features:
+  set: local_93
+  preprocessing:
+    scaler: standard
+
+graph:
+  view: bidirectional
+
+model:
+  name: graphsage_full_batch
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

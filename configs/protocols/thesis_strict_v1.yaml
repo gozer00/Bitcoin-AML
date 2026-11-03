@@ -1,0 +1,30 @@
+name: thesis_strict_v1
+
+split:
+  train: [1, 29]
+  validation: [30,34]
+  test: [35, 49]
+
+graph_access:
+  policy: strict_rolling
+
+model_selection:
+  metric: average_precision
+
+refit:
+  enabled: true
+  data: train_validation
+  refit_preprocessing: true
+
+decision_rule:
+  type: fixed_threshold
+  threshold: 0.5
+
+evaluation:
+  metrics:
+    - precision
+    - recall
+    - f1
+    - average_precision
+
+  per_timestep: true

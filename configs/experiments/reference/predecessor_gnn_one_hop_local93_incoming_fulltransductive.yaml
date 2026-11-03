@@ -1,0 +1,25 @@
+name: predecessor_gnn_one_hop_local93_incoming_fulltransductive
+
+dataset:
+  version: elliptic_v1
+
+protocol: thesis_fulltransductive_v1
+
+features:
+  set: local_93
+  preprocessing:
+    scaler: standard
+
+graph:
+  view: incoming
+  hops: 1
+
+model:
+  name: predecessor_gnn_one_hop
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46

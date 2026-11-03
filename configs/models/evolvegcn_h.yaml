@@ -1,0 +1,23 @@
+name: evolvegcn_h
+
+# num_layers is fixed (not searched), mirroring graphsage_sampled.yaml's
+# precedent of fixing expensive-to-vary structural hyperparameters: each
+# additional layer adds a sequential per-timestep recurrence step to every
+# epoch, multiplying cost across the whole ~34-timestep training sequence.
+# epochs and the hidden_dim ceiling are also lower than gcn.yaml's for the
+# same reason -- a single evolvegcn_h epoch replays the full timestep
+# sequence, so it is intrinsically far more expensive per-epoch than gcn's
+# one-shot forward pass.
+fixed_parameters:
+  num_layers: 2
+  epochs: 100
+  learning_rate: 0.01
+  weight_decay: 0.0005
+
+search_space:
+  hidden_dim:
+    - 8
+    - 16
+  dropout:
+    - 0.2
+    - 0.5
